@@ -168,7 +168,7 @@ const AdminLogin = () => {
 
               <div className="mt-6 pt-5 border-t border-white/[0.08] text-center">
                 <p className="text-xs text-slate-500">
-                  Default credentials: <code className="text-electric font-mono bg-white/[0.05] px-1.5 py-0.5 rounded">admin</code> / <code className="text-electric font-mono bg-white/[0.05] px-1.5 py-0.5 rounded">Admin@MR2026!</code>
+                  Authorized personnel only. All login activities are secured.
                 </p>
               </div>
             </div>
