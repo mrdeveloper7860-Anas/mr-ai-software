@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <defs>
+    <linearGradient id="m" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0057D9"/>
+      <stop offset="1" stop-color="#0B2A5B"/>
+    </linearGradient>
+    <linearGradient id="t" x1="6" y1="40" x2="42" y2="10" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00E5FF"/>
+      <stop offset="1" stop-color="#3D85E8"/>
+    </linearGradient>
+  </defs>
+  <rect x="1.5" y="1.5" width="45" height="45" rx="12" fill="url(#m)" stroke="rgba(255,255,255,0.18)"/>
+  <text x="24" y="30" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="17" fill="#FFFFFF" letter-spacing="-0.5">MR</text>
+  <path d="M8 37 H17 L21 33 H28 L32 37 H40" stroke="url(#t)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="8" cy="37" r="1.8" fill="#00E5FF"/>
+  <circle cx="40" cy="37" r="1.8" fill="#00E5FF"/>
+  <circle cx="28" cy="33" r="2.1" fill="#D4AF37"/>
+</svg>
