@@ -37,7 +37,6 @@ const Contact = () => {
     e.preventDefault();
     if (status === "submitting" || !validate()) return;
     setStatus("submitting");
-    recordInquiryLocally(form);
     try {
       const baseUrl = getApiBaseUrl();
       const res = await fetch(`${baseUrl}/api/contact`, {
@@ -45,12 +44,16 @@ const Contact = () => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
       });
-      if (!res.ok) {
-        console.warn("Backend API returned non-200, inquiry recorded in local admin store.");
+      if (res.ok) {
+        setStatus("success");
+        return;
       }
+      console.warn("Backend API returned non-200, recording inquiry locally as fallback.");
+      recordInquiryLocally(form);
       setStatus("success");
     } catch (err) {
-      console.warn("Backend network error, inquiry recorded in local admin store:", err);
+      console.warn("Backend network error, recording inquiry locally as fallback:", err);
+      recordInquiryLocally(form);
       setStatus("success");
     }
   };

@@ -225,8 +225,7 @@ export const fetchAllInquiries = async () => {
     });
     if (res.ok) {
       const data = await res.json();
-      if (Array.isArray(data) && data.length > 0) {
-        // Sync local cache
+      if (Array.isArray(data)) {
         saveLocalInquiries(data);
         return data;
       }
@@ -250,7 +249,7 @@ export const fetchAllEarlyAccess = async () => {
     });
     if (res.ok) {
       const data = await res.json();
-      if (Array.isArray(data) && data.length > 0) {
+      if (Array.isArray(data)) {
         saveLocalEarlyAccess(data);
         return data;
       }

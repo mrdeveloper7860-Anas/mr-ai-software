@@ -40,8 +40,6 @@ const EarlyAccessForm = ({ product }) => {
     if (Object.keys(er).length || status === "submitting") return;
     setStatus("submitting");
 
-    recordEarlyAccessLocally({ ...form, product: product.slug });
-
     try {
       const baseUrl = getApiBaseUrl();
       const res = await fetch(`${baseUrl}/api/early-access`, {
@@ -49,12 +47,16 @@ const EarlyAccessForm = ({ product }) => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ ...form, product: product.slug }),
       });
-      if (!res.ok) {
-        console.warn("Backend API returned non-200, early access recorded locally.");
+      if (res.ok) {
+        setStatus("success");
+        return;
       }
+      console.warn("Backend API returned non-200, early access recorded locally as fallback.");
+      recordEarlyAccessLocally({ ...form, product: product.slug });
       setStatus("success");
     } catch (err) {
-      console.warn("Backend network error, early access recorded locally:", err);
+      console.warn("Backend network error, early access recorded locally as fallback:", err);
+      recordEarlyAccessLocally({ ...form, product: product.slug });
       setStatus("success");
     }
   };
