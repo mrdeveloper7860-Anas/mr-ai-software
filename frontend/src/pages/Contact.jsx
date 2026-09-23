@@ -98,10 +98,16 @@ const Contact = () => {
                   </div>
                 </li>
                 <li className="flex items-start gap-4">
-                  <span className="w-10 h-10 rounded-xl bg-royal/15 text-electric flex items-center justify-center shrink-0"><MapPin size={17} /></span>
-                  <div>
-                    <p className="text-xs font-mono uppercase tracking-widest text-slate-500">Location</p>
-                    <p className="text-sm text-slate-200">{COMPANY.location}</p>
+                  <span className="w-10 h-10 rounded-xl bg-royal/15 text-electric flex items-center justify-center shrink-0 mt-1"><MapPin size={17} /></span>
+                  <div className="space-y-3">
+                    <div>
+                      <p className="text-xs font-mono uppercase tracking-widest text-slate-500">Regional Office</p>
+                      <p className="text-sm text-slate-200 mt-0.5 leading-relaxed">{COMPANY.regionalAddress}</p>
+                    </div>
+                    <div>
+                      <p className="text-xs font-mono uppercase tracking-widest text-slate-500">Corporate Office</p>
+                      <p className="text-sm text-slate-200 mt-0.5 leading-relaxed">{COMPANY.corporateAddress}</p>
+                    </div>
                   </div>
                 </li>
               </ul>

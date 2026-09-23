@@ -71,15 +71,15 @@ const About = () => (
             The People Behind MR AI
           </h2>
           <p className="mt-4 text-slate-400 max-w-2xl">
-            Four founders, one conviction: real-world work deserves better software.
+            Five founders, one conviction: real-world work deserves better software.
           </p>
         </Reveal>
-        <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
           {FOUNDERS.map((f, i) => (
             <Reveal key={f.name} delay={i * 0.07}>
               <div
                 data-testid={`founder-card-${f.initials.toLowerCase()}`}
-                className="card-dark card-hover p-7 text-center h-full"
+                className="card-dark card-hover p-6 sm:p-7 text-center h-full flex flex-col items-center justify-between"
               >
                 <div className="relative mx-auto w-24 h-24">
                   <div className="absolute inset-0 rounded-full bg-gradient-to-br from-royal via-royal-600 to-electric/50 p-[2px]">
@@ -89,8 +89,10 @@ const About = () => (
                   </div>
                   <span className="absolute bottom-0.5 right-0.5 w-3 h-3 rounded-full bg-gold border-2 border-navy-800" aria-hidden="true" />
                 </div>
-                <h3 className="mt-5 text-base font-bold text-white">{f.name}</h3>
-                <p className="mt-1 text-xs font-mono uppercase tracking-widest text-slate-500">Founder</p>
+                <div className="mt-4">
+                  <h3 className="text-base font-bold text-white leading-snug">{f.name}</h3>
+                  <p className="mt-1 text-xs font-mono uppercase tracking-widest text-slate-500">Founder</p>
+                </div>
               </div>
             </Reveal>
           ))}
@@ -101,13 +103,20 @@ const About = () => (
     <section className="bg-[#0A0C13] border-t border-white/[0.06]">
       <div className="container-x py-16 lg:py-24 text-center">
         <Reveal>
-          <p className="eyebrow mb-4">Where We Begin</p>
+          <p className="eyebrow mb-4">Our Presence</p>
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-white max-w-2xl mx-auto">
-            Rooted in Mahoba. Building for India. Aiming for the world.
+            Rooted in Uttar Pradesh. Building for India. Aiming for the world.
           </h2>
-          <p className="mt-4 text-slate-400 max-w-xl mx-auto flex items-center justify-center gap-2">
-            <MapPin size={15} className="text-electric" /> {COMPANY.location}
-          </p>
+          <div className="mt-8 grid sm:grid-cols-2 gap-4 max-w-3xl mx-auto text-left">
+            <div className="card-dark border border-white/10 p-5 rounded-2xl">
+              <span className="eyebrow flex items-center gap-1.5"><MapPin size={13} /> Regional Office</span>
+              <p className="mt-2 text-xs sm:text-sm text-slate-300 leading-relaxed font-sans">{COMPANY.regionalAddress}</p>
+            </div>
+            <div className="card-dark border border-white/10 p-5 rounded-2xl">
+              <span className="eyebrow flex items-center gap-1.5"><MapPin size={13} /> Corporate Office</span>
+              <p className="mt-2 text-xs sm:text-sm text-slate-300 leading-relaxed font-sans">{COMPANY.corporateAddress}</p>
+            </div>
+          </div>
         </Reveal>
       </div>
       <Marquee items={["Simplicity", "Security", "Scalability", "Intelligence", "Trust", "Innovation", "Growth"]} />

@@ -14,7 +14,9 @@ export const COMPANY = {
   email: "mrdeveloper7860@gmail.com",
   phone: "+91 84178 61398",
   phoneHref: "tel:+918417861398",
-  location: "Mahoba, Uttar Pradesh, India",
+  location: "Lucknow & Mahoba, Uttar Pradesh, India",
+  regionalAddress: "No. 207, FI Tower, 3rd Floor, Burlington Chauraha, 37 Cant Road, Lucknow, Uttar Pradesh – 226001",
+  corporateAddress: "Mohammad Ahmad, Khajuraho Road, Mahoba, Uttar Pradesh – 210427",
   mission: "To simplify real-world work through intelligent software, automation and artificial intelligence.",
   vision: "To build accessible, secure, intelligent and practical technology that makes everyday work simpler and more efficient.",
 };
@@ -105,6 +107,7 @@ export const FOUNDERS = [
   { name: "Nafis Mohammad", initials: "NM" },
   { name: "Sultan Ahmad", initials: "SA" },
   { name: "Mohammad Azhad", initials: "MA" },
+  { name: "Adnan Ahmad", initials: "AA" },
 ];
 
 export const PORTFOLIO = [

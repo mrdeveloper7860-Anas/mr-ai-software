@@ -63,8 +63,17 @@ const Footer = () => (
               <a data-testid="footer-phone-link" href={COMPANY.phoneHref} className="hover:text-white transition-colors">{COMPANY.phone}</a>
             </li>
             <li className="flex items-start gap-3">
-              <MapPin size={15} className="text-electric shrink-0 mt-0.5" />
-              <span>{COMPANY.location}</span>
+              <MapPin size={15} className="text-electric shrink-0 mt-1" />
+              <div className="space-y-2 text-xs text-slate-400">
+                <div>
+                  <span className="text-slate-200 font-semibold block">Regional Office:</span>
+                  <span>{COMPANY.regionalAddress}</span>
+                </div>
+                <div>
+                  <span className="text-slate-200 font-semibold block">Corporate Office:</span>
+                  <span>{COMPANY.corporateAddress}</span>
+                </div>
+              </div>
             </li>
           </ul>
           <div className="mt-6 flex items-center gap-2">
