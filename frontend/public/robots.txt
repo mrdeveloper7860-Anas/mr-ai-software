@@ -3,4 +3,4 @@ Allow: /
 Disallow: /admin
 Disallow: /admin/
 
-Sitemap: https://mrai.in/sitemap.xml
+Sitemap: https://mr-ai-software.vercel.app/sitemap.xml

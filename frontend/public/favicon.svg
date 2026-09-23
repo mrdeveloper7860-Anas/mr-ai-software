@@ -1,18 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
   <defs>
-    <linearGradient id="m" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#0057D9"/>
-      <stop offset="1" stop-color="#0B2A5B"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0057D9"/>
+      <stop offset="60%" stop-color="#09204A"/>
+      <stop offset="100%" stop-color="#071226"/>
     </linearGradient>
-    <linearGradient id="t" x1="6" y1="40" x2="42" y2="10" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#00E5FF"/>
-      <stop offset="1" stop-color="#3D85E8"/>
+    <linearGradient id="glow" x1="60" y1="420" x2="450" y2="100" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#00E5FF"/>
+      <stop offset="100%" stop-color="#3D85E8"/>
     </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
   </defs>
-  <rect x="1.5" y="1.5" width="45" height="45" rx="12" fill="url(#m)" stroke="rgba(255,255,255,0.18)"/>
-  <text x="24" y="30" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="17" fill="#FFFFFF" letter-spacing="-0.5">MR</text>
-  <path d="M8 37 H17 L21 33 H28 L32 37 H40" stroke="url(#t)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-  <circle cx="8" cy="37" r="1.8" fill="#00E5FF"/>
-  <circle cx="40" cy="37" r="1.8" fill="#00E5FF"/>
-  <circle cx="28" cy="33" r="2.1" fill="#D4AF37"/>
+
+  <circle cx="256" cy="256" r="248" fill="url(#bg)" stroke="#00E5FF" stroke-width="8" stroke-opacity="0.75"/>
+  <circle cx="256" cy="256" r="230" stroke="rgba(255,255,255,0.15)" stroke-width="2" fill="none"/>
+
+  <text x="256" y="295" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', Arial, sans-serif" font-weight="900" font-size="190" fill="#FFFFFF" letter-spacing="-3" filter="url(#shadow)">MR</text>
+
+  <path d="M 100 375 H 175 L 215 335 H 295 L 335 375 H 412" stroke="url(#glow)" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <circle cx="100" cy="375" r="18" fill="#00E5FF"/>
+  <circle cx="412" cy="375" r="18" fill="#00E5FF"/>
+  <circle cx="215" cy="335" r="13" fill="#00E5FF"/>
+  <circle cx="295" cy="335" r="18" fill="#D4AF37" stroke="#FFFFFF" stroke-width="3"/>
+  <circle cx="255" cy="335" r="7" fill="#00E5FF"/>
 </svg>

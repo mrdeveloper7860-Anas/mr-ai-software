@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://mrai.in/</loc><priority>1.0</priority></url>
-  <url><loc>https://mrai.in/solutions</loc><priority>0.9</priority></url>
-  <url><loc>https://mrai.in/ai-automation</loc><priority>0.9</priority></url>
-  <url><loc>https://mrai.in/products</loc><priority>0.9</priority></url>
-  <url><loc>https://mrai.in/products/fee-management</loc><priority>0.8</priority></url>
-  <url><loc>https://mrai.in/products/edutech</loc><priority>0.7</priority></url>
-  <url><loc>https://mrai.in/products/healthtech</loc><priority>0.7</priority></url>
-  <url><loc>https://mrai.in/products/commerce</loc><priority>0.7</priority></url>
-  <url><loc>https://mrai.in/products/office</loc><priority>0.7</priority></url>
-  <url><loc>https://mrai.in/products/property</loc><priority>0.7</priority></url>
-  <url><loc>https://mrai.in/products/ai-assistant</loc><priority>0.7</priority></url>
-  <url><loc>https://mrai.in/portfolio</loc><priority>0.8</priority></url>
-  <url><loc>https://mrai.in/about</loc><priority>0.8</priority></url>
-  <url><loc>https://mrai.in/contact</loc><priority>0.9</priority></url>
-  <url><loc>https://mrai.in/privacy-policy</loc><priority>0.3</priority></url>
-  <url><loc>https://mrai.in/terms</loc><priority>0.3</priority></url>
+  <url><loc>https://mr-ai-software.vercel.app/</loc><priority>1.0</priority></url>
+  <url><loc>https://mr-ai-software.vercel.app/solutions</loc><priority>0.9</priority></url>
+  <url><loc>https://mr-ai-software.vercel.app/ai-automation</loc><priority>0.9</priority></url>
+  <url><loc>https://mr-ai-software.vercel.app/products</loc><priority>0.9</priority></url>
+  <url><loc>https://mr-ai-software.vercel.app/products/fee-management</loc><priority>0.8</priority></url>
+  <url><loc>https://mr-ai-software.vercel.app/products/edutech</loc><priority>0.7</priority></url>
+  <url><loc>https://mr-ai-software.vercel.app/products/healthtech</loc><priority>0.7</priority></url>
+  <url><loc>https://mr-ai-software.vercel.app/products/commerce</loc><priority>0.7</priority></url>
+  <url><loc>https://mr-ai-software.vercel.app/products/office</loc><priority>0.7</priority></url>
+  <url><loc>https://mr-ai-software.vercel.app/products/property</loc><priority>0.7</priority></url>
+  <url><loc>https://mr-ai-software.vercel.app/products/ai-assistant</loc><priority>0.7</priority></url>
+  <url><loc>https://mr-ai-software.vercel.app/portfolio</loc><priority>0.8</priority></url>
+  <url><loc>https://mr-ai-software.vercel.app/about</loc><priority>0.8</priority></url>
+  <url><loc>https://mr-ai-software.vercel.app/contact</loc><priority>0.9</priority></url>
+  <url><loc>https://mr-ai-software.vercel.app/privacy-policy</loc><priority>0.3</priority></url>
+  <url><loc>https://mr-ai-software.vercel.app/terms</loc><priority>0.3</priority></url>
 </urlset>
