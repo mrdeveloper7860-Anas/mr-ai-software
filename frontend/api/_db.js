@@ -1,14 +1,18 @@
 const { MongoClient } = require("mongodb");
 
-const uri =
-  process.env.MONGO_URL ||
-  "mongodb+srv://mraitechnologies:Qwertyuiop%29%24@cluster0.hatpqjd.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+const uri = process.env.MONGO_URL;
 const dbName = process.env.DB_NAME || "mrai_database";
 
 let cachedClient = null;
 let cachedDb = null;
 
 async function connectToDatabase() {
+  if (!uri) {
+    throw new Error(
+      "MONGO_URL environment variable is not set. Please set it in Vercel project settings."
+    );
+  }
+
   if (cachedClient && cachedDb) {
     return { client: cachedClient, db: cachedDb };
   }
